@@ -2,5 +2,5 @@
 
 ## Design feito com tema de basquete baseado no vídeo da Isa (Papo de dev).
 
-[Preview.](hhttps://imgur.com/anoIeBu)
+[Preview.](https://imgur.com/anoIeBu)
 
