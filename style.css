@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    99deg,
+    rgba(14, 14, 14, 0.9752275910364145) 50%,
+    rgba(252, 98, 1, 1) 73%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.container-glass {
+  width: 70%;
+  height: 85%;
+  position: relative;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-glass:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2020px rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 17px;
+  font-weight: bold;
+  height: 15%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  color: black !important;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+li.active {
+  background: #fc6201;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.social-media {
+  display: flex;
+  color: black !important;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  height: 100%;
+  cursor: pointer;
+}
+
+svg {
+  margin: 15px 20px;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.content-text {
+  color: black !important;
+  width: 100%;
+  padding: 0 50px;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.right {
+  text-align: right;
+  margin-top: 240px;
+}
+
+.left {
+  margin-top: -300px;
+}
+
+img {
+  position: absolute;
+  width: 22%;
+  top: 15%;
+  left: 40%;
+  transform: translate (-50%, -50%);
+  animation: move 2s infinite alternate;
+}
+
+.register-now {
+  background: #fc6201;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 19%;
+  height: 8%;
+  font-weight: bold;
+  border-radius: 8px 10px;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+svg {
+  margin-right: 15px;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 85%);
+  }
+}
