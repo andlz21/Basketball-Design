@@ -61,6 +61,11 @@ li {
   align-items: center;
   font-size: 19px;
   cursor: pointer;
+  color: white;
+}
+
+li:hover {
+  color: #fc6201;
 }
 
 li.active {
@@ -70,6 +75,14 @@ li.active {
   border: 3px solid black;
 }
 
+.active:hover {
+  color: black;
+}
+
+.nav_icons:hover {
+  color: black;
+}
+
 .social-media {
   display: flex;
   color: black !important;
@@ -77,7 +90,14 @@ li.active {
   justify-content: center;
   width: fit-content;
   height: 100%;
+}
+
+.nav_leftbar {
   cursor: pointer;
+}
+
+.nav_leftbar:hover {
+  color: #fc6201;
 }
 
 svg {
@@ -92,7 +112,7 @@ svg {
 }
 
 .content-text {
-  color: black !important;
+  color: lightgray;
   width: 100%;
   padding: 0 50px;
 }
@@ -136,6 +156,10 @@ img {
   border: 2px solid black;
   color: black;
   cursor: pointer;
+}
+
+.register-now:hover {
+  color: white;
 }
 
 svg {
